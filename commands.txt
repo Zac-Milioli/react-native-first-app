@@ -44,7 +44,9 @@ Caso necessário criar:
         hooks/
         pages/
             home/index.js
-            nome-de-outra-pagina/index.js
+            nome-de-outra-pagina/
+                                components/
+                                index.js
         routes.js
 
 Configurações gerais se encontram em app.json
