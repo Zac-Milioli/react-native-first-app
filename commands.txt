@@ -1,0 +1,50 @@
+SEMPRE EXECUTAR AS AÇÕES NA RAÍZ DO PROJETO
+-------------------------------------------------------
+Para executar e debugar é necessário um dispositivo
+móvel, seja emulado ou físico.
+
+FÍSICO:
+    Ativar depuração USB, conectar no pc e selecioná-lo.
+
+    Alternativamente, baixar o expogo e escanear
+    o qr code (é necessário estar na mesma rede do pc).
+
+EMULADOR:
+    - Baixar Android Studio
+    - Clicar em "Gerenciar dispositivos"
+    - Selecionar um aparelho para baixar ou instalar
+    - Ligar o dispositivo
+    - Deixar rodando
+    - Ao executar o app, selecionar a opção "a" e
+      automaticamente abrirá o app no aparelho
+
+-------------------------------------------------------
+iniciar um projeto:
+    npx create-expo-app nome-do-app
+
+rodar:
+    npx expo start
+
+instalar bibliotecas, módulos e funções da comunidade:
+    npx expo install @nome
+
+instalar outras coisas:
+    npm install
+
+-------------------------------------------------------
+Organização dos arquivos:
+    assets/ - Arquivos de splashscreen e ícones
+    node_modules/ - Instalações
+    App.js - Arquivo que é rodado inicialmente
+
+Caso necessário criar:
+    src/
+        assets/
+        components/modal/index.js
+        hooks/
+        pages/
+            home/index.js
+            nome-de-outra-pagina/index.js
+        routes.js
+
+Configurações gerais se encontram em app.json
