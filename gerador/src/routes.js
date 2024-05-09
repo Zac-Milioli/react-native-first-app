@@ -17,7 +17,7 @@ export function Routes(){
                     tabBarShowLabel: false,
                     tabBarIcon: ({ focused, size, color }) => {
                         if(focused){
-                            return <Ionicons size={size} color={color} name="home"/>
+                            return <Ionicons size={size} color={'#000'} name="home"/>
                         }
 
                         return <Ionicons size={size} color={color} name="home-outline"/>
@@ -33,7 +33,7 @@ export function Routes(){
                     tabBarShowLabel: false,
                     tabBarIcon: ({ focused, size, color }) => {
                         if(focused){
-                            return <Ionicons size={size} color={color} name="lock-closed"/>
+                            return <Ionicons size={size} color={'#000'} name="lock-open"/>
                         }
 
                         return <Ionicons size={size} color={color} name="lock-closed-outline"/>

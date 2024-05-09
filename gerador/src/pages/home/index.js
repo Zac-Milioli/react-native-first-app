@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Image, TouchableOpacity, Modal } from 'react-na
 import Slider from '@react-native-community/slider';
 import { ModalPassword } from '../../components/modal';
 
-let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%¨&*()-_=+{[}]^~:;.,<>?/|";
+let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#_+?@";
 
 export function Home() {
     const [size, setSize] = useState(10);
@@ -38,7 +38,7 @@ export function Home() {
                     maximumValue={20}
                     maximumTrackTintColor='#ff0000'
                     minimumTrackTintColor='#000'
-                    thumbTintColor='#392de9'
+                    thumbTintColor='#000'
                     value={size}
                     onValueChange={(value) => setSize(value.toFixed(0))}
                 />
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
         padding: 8
     },
     button: {
-        backgroundColor: "#392de9",
+        backgroundColor: "#000",
         width: "80%",
         height: 50,
         alignItems: "center",
